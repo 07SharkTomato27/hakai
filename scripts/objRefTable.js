@@ -1,0 +1,70 @@
+const C3 = self.C3;
+self.C3_GetObjectRefTable = function () {
+	return [
+		C3.Plugins.NinePatch,
+		C3.Plugins.Sprite,
+		C3.Behaviors.Physics,
+		C3.Behaviors.Rotate,
+		C3.Behaviors.DragnDrop,
+		C3.Plugins.Button,
+		C3.Plugins.Button.Cnds.OnClicked,
+		C3.Plugins.System.Acts.RestartLayout,
+		C3.Plugins.System.Acts.CreateObject,
+		C3.Behaviors.Rotate.Acts.SetEnabled,
+		C3.Plugins.System.Acts.GoToLayout
+	];
+};
+self.C3_JsPropNameTable = [
+	{haikei: 0},
+	{物理: 0},
+	{回転: 0},
+	{jimen: 0},
+	{"ドラッグ＆ドロップ": 0},
+	{スプライト: 0},
+	{スプライト2: 0},
+	{btn1: 0},
+	{ボタン: 0},
+	{btn2: 0},
+	{スプライト3: 0},
+	{ボタン2: 0},
+	{スプライト4: 0},
+	{potato: 0},
+	{スプライト5: 0},
+	{スプライト6: 0},
+	{スプライト7: 0},
+	{スプライト8: 0},
+	{スプライト9: 0},
+	{スプライト10: 0},
+	{スプライト11: 0},
+	{スプライト12: 0},
+	{スプライト13: 0},
+	{ボタン3: 0},
+	{ボタン4: 0},
+	{ボタン5: 0}
+];
+
+self.InstanceType = {
+	haikei: class extends self.I9PatchInstance {},
+	jimen: class extends self.ISpriteInstance {},
+	スプライト: class extends self.ISpriteInstance {},
+	スプライト2: class extends self.ISpriteInstance {},
+	btn1: class extends self.IButtonInstance {},
+	ボタン: class extends self.IButtonInstance {},
+	btn2: class extends self.IButtonInstance {},
+	スプライト3: class extends self.ISpriteInstance {},
+	ボタン2: class extends self.IButtonInstance {},
+	スプライト4: class extends self.ISpriteInstance {},
+	potato: class extends self.ISpriteInstance {},
+	スプライト5: class extends self.ISpriteInstance {},
+	スプライト6: class extends self.ISpriteInstance {},
+	スプライト7: class extends self.ISpriteInstance {},
+	スプライト8: class extends self.ISpriteInstance {},
+	スプライト9: class extends self.ISpriteInstance {},
+	スプライト10: class extends self.ISpriteInstance {},
+	スプライト11: class extends self.ISpriteInstance {},
+	スプライト12: class extends self.ISpriteInstance {},
+	スプライト13: class extends self.ISpriteInstance {},
+	ボタン3: class extends self.IButtonInstance {},
+	ボタン4: class extends self.IButtonInstance {},
+	ボタン5: class extends self.IButtonInstance {}
+}
